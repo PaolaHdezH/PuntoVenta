@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="bpMenuGeneral" prefHeight="750.0" prefWidth="1000.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.VistaGeneralEmpleadoControlador">
+   <left>
+      <VBox alignment="TOP_CENTER" prefWidth="200.0" spacing="30.0" style="-fx-background-color: #5C0010;" BorderPane.alignment="CENTER">
+         <children>
+            <Button alignment="CENTER" mnemonicParsing="false" onAction="#btnNuevaVenta" prefHeight="60.0" prefWidth="150.0" text="Nueva Venta" textAlignment="CENTER">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagenes/compras.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button alignment="CENTER" mnemonicParsing="false" onAction="#btnReportes" prefHeight="60.0" prefWidth="150.0" text="REPORTES" textAlignment="CENTER">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagenes/Clientes.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <padding>
+            <Insets bottom="40.0" left="15.0" right="15.0" top="40.0" />
+         </padding>
+      </VBox>
+   </left>
+   <top>
+      <ImageView fitHeight="150.0" fitWidth="1000.0" pickOnBounds="true" smooth="false" BorderPane.alignment="CENTER">
+         <image>
+            <Image url="@../imagenes/fondoPV.png" />
+         </image>
+      </ImageView>
+   </top>
+</BorderPane>
